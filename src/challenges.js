@@ -23,7 +23,6 @@ function splitSentence(stringPhrase) {
 // Desafio 4
 /* Array ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']
 retorno:  'Paolillo, Lucas'  */
-
 function concatName(array) {
   let names = array.length - 1;
   let lastName = array[names];
@@ -42,10 +41,18 @@ function footballPoints(wins, ties) {
 }
 console.log(footballPoints(0, 0));
 
-// Desafio 6
-function highestCount() {
-  // seu código aqui
+// Desafio 6 Consulta no MDN sobre Sintaxe de Espalhamento ...spread
+function highestCount(array) {
+  let result = 0;
+  let maxValue = Math.max(...array);
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index] === maxValue) {
+      result += 1;
+    }
+  }
+  return result;
 }
+console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
 
 // Desafio 7
 function catAndMouse() {
