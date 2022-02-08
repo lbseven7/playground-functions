@@ -52,7 +52,7 @@ function highestCount(array) {
   }
   return result;
 }
-console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+// prefiro escrever em inglês pra treinar o odioma
 
 // Desafio 7
 function catAndMouse() {
