@@ -1,4 +1,4 @@
-// Desafio 1
+// Desafio 1 Caique mostrou na apresentação
 function compareTrue(v1, v2) {
   if (v1 && v2 === true) {
     return true;
@@ -6,14 +6,14 @@ function compareTrue(v1, v2) {
   return false;
 }
 
-// Desafio 2
+// Desafio 2 sem ajuda
 function calcArea(base, height) {
   let triangule = 0;
   triangule = (base * height) / 2;
   return triangule;
 }
 
-// Desafio 3
+// Desafio 3 pesquisa no MDN split();
 function splitSentence(stringPhrase) {
   stringPhrase = stringPhrase.split(' ');
 
@@ -21,10 +21,17 @@ function splitSentence(stringPhrase) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
-}
 
+function concatName(array) {
+  let nameX = array.length - 1;
+  let lastName = array[nameX];
+  let firstName = array[0];
+
+  let resultado = lastName + ', ' + firstName;
+
+  return resultado;
+}
+console.log(concatName(['captain', 'my', 'captain']));
 // Desafio 5
 function footballPoints() {
   // seu código aqui
