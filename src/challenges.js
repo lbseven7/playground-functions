@@ -14,10 +14,10 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence(stringPrhase) {
-  stringPrhase = stringPrhase.split(' ');
+function splitSentence(stringPhrase) {
+  stringPhrase = stringPhrase.split(' ');
 
-  return stringPrhase;
+  return stringPhrase;
 }
 
 // Desafio 4
