@@ -21,8 +21,8 @@ function splitSentence(stringPhrase) {
 }
 
 // Desafio 4
-
-/* Array ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'] */
+/* Array ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']
+retorno:  'Paolillo, Lucas'  */
 
 function concatName(array) {
   let names = array.length - 1;
@@ -35,9 +35,12 @@ function concatName(array) {
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let result = 0;
+  result = (wins * 3) + (ties * 1);
+  return result;
 }
+console.log(footballPoints(0, 0));
 
 // Desafio 6
 function highestCount() {
