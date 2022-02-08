@@ -22,16 +22,18 @@ function splitSentence(stringPhrase) {
 
 // Desafio 4
 
+/* Array ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'] */
+
 function concatName(array) {
-  let nameX = array.length - 1;
-  let lastName = array[nameX];
+  let names = array.length - 1;
+  let lastName = array[names];
   let firstName = array[0];
 
   let resultado = lastName + ', ' + firstName;
 
   return resultado;
 }
-console.log(concatName(['captain', 'my', 'captain']));
+
 // Desafio 5
 function footballPoints() {
   // seu código aqui
