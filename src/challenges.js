@@ -13,11 +13,11 @@ function calcArea(base, height) {
   return triangule;
 }
 
-console.log(calcArea(10, 50));
-
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(stringPrhase) {
+  stringPrhase = stringPrhase.split(' ');
+
+  return stringPrhase;
 }
 
 // Desafio 4
