@@ -1,4 +1,4 @@
-// Desafio 1 
+// Desafio 1
 function compareTrue(v1, v2) {
   if (v1 && v2 === true) {
     return true;
@@ -7,9 +7,13 @@ function compareTrue(v1, v2) {
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+  let triangule = 0;
+  triangule = (base * height) / 2;
+  return triangule;
 }
+
+console.log(calcArea(10, 50));
 
 // Desafio 3
 function splitSentence() {
