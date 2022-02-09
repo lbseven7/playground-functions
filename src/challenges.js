@@ -70,27 +70,58 @@ function catAndMouse(mouse, cat1, cat2) {
 // Desafio 8
 function fizzBuzz(array) {
   const newArray = [];
-  for(number in array) {
-  if (array[number] % 3 === 0 && array[number] % 5 === 0) {
-  newArray.push('fizzBuzz');
-  } else if (array[number] % 3 === 0) {
-  newArray.push('fizz');
-  } else if (array[number] % 5 === 0) {
-  newArray.push('buzz');
-  } else {
-  newArray.push('bug!');
-  }
+  for (number in array) {
+    if (array[number] % 3 === 0 && array[number] % 5 === 0) {
+      newArray.push('fizzBuzz');
+    } else if (array[number] % 3 === 0) {
+      newArray.push('fizz');
+    } else if (array[number] % 5 === 0) {
+      newArray.push('buzz');
+    } else {
+      newArray.push('bug!');
+    }
   }
   return newArray;
-  }
+}
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+
+function encode(string) {
+  let encodeString = string.split('');
+  for (let index = 0; index < string.length; index += 1) {
+    if (encodeString[index] === 'a') {
+      encodeString[index] = '1';
+    } else if (encodeString[index] === 'e') {
+      encodeString[index] = '2';
+    } else if (encodeString[index] === 'i') {
+      encodeString[index] = '3';
+    } else if (encodeString[index] === 'o') {
+      encodeString[index] = '4';
+    } else if (encodeString[index] === 'u') {
+      encodeString[index] = '5';
+    }
+  }
+    return encodeString.join('');
 }
-function decode() {
-  // seu código aqui
+
+function decode(string) {
+  let decodeString = string.split('');
+  for (let index = 0; index < string.length; index += 1) {
+    if (decodeString[index] === '1') {
+      decodeString[index] = 'a';
+    } else if (decodeString[index] === '2') {
+      decodeString[index] = 'e';
+    } else if (decodeString[index] === '3') {
+      decodeString[index] = 'i';
+    } else if (decodeString[index] === '4') {
+      decodeString[index] = 'o';
+    } else if (decodeString[index] === '5') {
+      decodeString[index] = 'u';
+    }
+  }
+    return decodeString.join('');
 }
+console.log(decode('h3 th2r2!'));
 
 // Desafio 10
 function techList() {
