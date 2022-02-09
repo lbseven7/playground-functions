@@ -121,7 +121,6 @@ function decode(string) {
   }
     return decodeString.join('');
 }
-console.log(decode('h3 th2r2!'));
 
 // Desafio 10
 function techList() {
