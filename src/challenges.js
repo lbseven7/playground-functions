@@ -39,24 +39,32 @@ function footballPoints(wins, ties) {
   result = (wins * 3) + (ties * 1);
   return result;
 }
-console.log(footballPoints(0, 0));
 
 // Desafio 6 Consulta no MDN sobre Sintaxe de Espalhamento ...spread
 function highestCount(array) {
   let result = 0;
-  let maxValue = Math.max(...array);
-  for (let index = 0; index < array.length; index += 1) {
-    if (array[index] === maxValue) {
-      result += 1;
+  let maxValue = Math.max(...array); // pega o número maior
+  console.log(maxValue);
+  for (let index = 0; index < array.length; index += 1) { // quantas vezes se repete o maior numero
+    if (array[index] === maxValue) { // compara
+      result += 1; // salva os numeros
     }
   }
   return result;
 }
-// prefiro escrever em inglês pra treinar o odioma
 
+// prefiro escrever em inglês pra treinar o odioma
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  let distanceMouseCat1 = Math.abs(mouse - cat1);
+  let distanceMouseCat2 = Math.abs(mouse - cat2);
+  if (distanceMouseCat1 === distanceMouseCat2) {
+    return 'os gatos trombam e o rato foge';
+  }
+  if (distanceMouseCat1 < distanceMouseCat2) {
+    return 'cat1';
+  }
+  return 'cat2';
 }
 
 // Desafio 8
