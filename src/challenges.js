@@ -101,7 +101,7 @@ function encode(string) {
       encodeString[index] = '5';
     }
   }
-    return encodeString.join('');
+  return encodeString.join('');
 }
 
 function decode(string) {
@@ -119,24 +119,35 @@ function decode(string) {
       decodeString[index] = 'u';
     }
   }
-    return decodeString.join('');
+  return decodeString.join('');
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
-}
+function techList(array, name) {
+  let arr = [];
+  array.sort();
+  for (let index = 0; index < array.length; index += 1) {
+    arr.push({tech: array[index], name});
+  }
 
-module.exports = {
-  calcArea,
-  catAndMouse,
-  compareTrue,
-  concatName,
-  decode,
-  encode,
-  fizzBuzz,
-  footballPoints,
-  highestCount,
-  splitSentence,
-  techList,
-};
+    if (array.length === 0) {
+      return 'vazio!';
+    }
+    return arr;
+  }
+
+  console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Léo Barbosa"));
+
+  module.exports = {
+    calcArea,
+    catAndMouse,
+    compareTrue,
+    concatName,
+    decode,
+    encode,
+    fizzBuzz,
+    footballPoints,
+    highestCount,
+    splitSentence,
+    techList,
+  };
