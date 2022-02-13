@@ -130,11 +130,10 @@ function techList(array, name) {
     arr.push({ tech: array[index], name });
   }
   if (array.length === 0) {
-    return 'vazio!';
+    return 'Vazio!';
   }
   return arr;
 }
-
 
 module.exports = {
   calcArea,
