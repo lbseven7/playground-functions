@@ -28,7 +28,7 @@ function concatName(array) {
   let lastName = array[names];
   let firstName = array[0];
 
-  let resultado = lastName + ', ' + firstName;
+  let resultado = `${lastName}, ${firstName}`;
 
   return resultado;
 }
@@ -44,7 +44,6 @@ function footballPoints(wins, ties) {
 function highestCount(array) {
   let result = 0;
   let maxValue = Math.max(...array); // pega o número maior
-  console.log(maxValue);
   for (let index = 0; index < array.length; index += 1) { // quantas vezes se repete o maior numero
     if (array[index] === maxValue) { // compara
       result += 1; // salva os numeros
@@ -68,6 +67,7 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
+// eslint-disable-next-line complexity
 function fizzBuzz(array) {
   const newArray = [];
   for (number in array) {
@@ -86,8 +86,9 @@ function fizzBuzz(array) {
 
 // Desafio 9
 
+// eslint-disable-next-line complexity
 function encode(string) {
-  let encodeString = string.split('');
+  let encodeString = string.split(''); // transforma em array para percorrer com o for
   for (let index = 0; index < string.length; index += 1) {
     if (encodeString[index] === 'a') {
       encodeString[index] = '1';
@@ -104,6 +105,7 @@ function encode(string) {
   return encodeString.join('');
 }
 
+// eslint-disable-next-line complexity
 function decode(string) {
   let decodeString = string.split('');
   for (let index = 0; index < string.length; index += 1) {
